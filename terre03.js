@@ -1,6 +1,8 @@
-let args = process.argv;
+let args = process.argv[2];
 let info = '';
-for(let alpha = args.slice(2);alpha < 123; alpha++)
+let alpha = args.codePointAt(0);
+//let newalpha = alpha.codePointAt(0);
+for(alpha; alpha < 123; alpha++)
 {
 	info += String.fromCharCode(alpha);
 }
