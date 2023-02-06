@@ -7,10 +7,10 @@ function racine(ag1){
 		res++;
 		if (res > (ag1 / 2 + 1))
 		{
-			return (0);
+			return (console.log(ag1, 'n\'a pas racine carre entière'));
 		}
 	}
-return (res);
+return (console.log('Resultat : ', res));
 }
 
 
@@ -25,12 +25,4 @@ else if (isNaN(x))
 	console.log('veuillez entrer un nombre');
 }
 else
-{
 racine(x);
-	if (res > (x / 2 +1))
-	{
-		console.log('pas de racine');
-	}
-	else
-	console.log('Resultat :', res);
-}
